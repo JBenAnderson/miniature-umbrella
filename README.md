@@ -7,5 +7,9 @@ Express and GraphQL exercise
 
 3.)  run index.js with terminal command: "node index.js".
 
-4.)  Navigate to" "http://localhost:4000/graphql" to view the express/graphql interface!
+4.)  Navigate to" "http://localhost:4000/graphql" to view the GraphiQL interface!
+
+5.)  Test the interaction by typing: "{hello}".
+
+
 
