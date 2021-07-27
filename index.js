@@ -34,7 +34,17 @@ var contacts = [
 ]
 var schema = buildSchema(`
   type Query {
-    hello: String
+    contacts: [Contact]
+  },
+  type Contact {
+      name: String
+      email: String
+      age: Int
+      courses:[Course]
+  }
+  type Course{
+      number: String
+      name: String
   }
 `);
 
