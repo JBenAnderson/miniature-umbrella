@@ -15,10 +15,8 @@ Express and GraphQL exercise
     contact(id:$sid){
         name
         email
-        age
-        
-    }
-    }
+        age 
+        }}
 to grab single contacts within database.  Make sure to declare your Query variable such as "sid" within example.
 
 
