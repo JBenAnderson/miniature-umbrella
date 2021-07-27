@@ -11,12 +11,12 @@ Express and GraphQL exercise
 
 5.)  Test the interaction by typing: "{contacts}".
 
-6.)  Use: query getContact($sid:Int!){
+6.)  Use: "query getContact($sid:Int!){
     contact(id:$sid){
         name
         email
         age 
-        }}
+        }}".
 to grab single contacts within database.  Make sure to declare your Query variable such as "sid" within example.
 
 
