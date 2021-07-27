@@ -33,7 +33,8 @@ var contacts = [
     }
 ]
 var schema = buildSchema(`
-  type Query {
+  type Query{
+    contact(id: Int): Contact
     contacts: [Contact]
   },
   type Contact {
@@ -50,10 +51,10 @@ var schema = buildSchema(`
 
 // The root provides a resolver function for each API endpoint
 var root = {
-  hello: () => {
-    return 'Hello world!';
-  },
+  contact: (arg)=>contacts[arg.id],
+  contacts : ()=> contacts
 };
+
 
 var app = express();
 app.use('/graphql', graphqlHTTP({
