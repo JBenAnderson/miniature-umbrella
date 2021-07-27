@@ -9,7 +9,16 @@ Express and GraphQL exercise
 
 4.)  Navigate to" "http://localhost:4000/graphql" to view the GraphiQL interface!
 
-5.)  Test the interaction by typing: "{hello}".
+5.)  Test the interaction by typing: "{contacts}".
 
+6.)  Use: query getContact($sid:Int!){
+    contact(id:$sid){
+        name
+        email
+        age
+        
+    }
+    }
+to grab single contacts within database.  Make sure to declare your Query variable such as "sid" within example.
 
 
