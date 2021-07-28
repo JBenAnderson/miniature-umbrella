@@ -12,24 +12,5 @@ Express and GraphQL exercise
 
 5.) Test the interaction by typing: "{restaurants}".
 
-<<<<<<< HEAD
-6.) Use: query getrestaurants($sid:Int!){
-    contact(id:$sid){
-name
-description
-(etc.)
 
-    }
-    }
-=======
-6.)  Use: "query getContact($sid:Int!){
-    contact(id:$sid){
-        name
-        email
-        age 
-        }}".
-to grab single contacts within database.  Make sure to declare your Query variable such as "sid" within example.
-
->>>>>>> b7969006aab666a2b56c803b78a073715ded743f
-
-to grab single restaurant within database. Make sure to declare your Query variable such as "sid" within example to correct id you are trying to get.
+note: To grab single restaurant within database. Make sure to declare your Query variable such as "sid" within example to correct id you are trying to get.
