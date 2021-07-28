@@ -94,8 +94,12 @@ type Mutation{
 var root = {
   restaurant: (arg) => restaurants[arg.id],
   restaurants: () => restaurants,
-  setContact: ({ input }) => {
-    restaurants.push({ name: input.name, email: input.email, age: input.age });
+  setrestaurant: ({ input }) => {
+    restaurants.push({
+      name: input.name,
+      description: input.description,
+      dishes: input.dishes,
+    });
     return input;
   },
   deleterestaurants: ({ id }) => {
